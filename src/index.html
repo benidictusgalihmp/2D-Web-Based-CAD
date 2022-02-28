@@ -24,7 +24,8 @@
                 <div class="mt-10">
                     <input class="p-0 w-full my-2 min-h-0 h-8 text-xs" type="file" id="btn_load" accept=".json" />
                     <input class="btn btn-primary w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_save" value="Save" />
-                    <input class="btn btn-primary w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_help" value="Help" />
+                    <a class="btn btn-primary w-full my-2 min-h-0 h-8 text-xs" id="btn_help" href="help.html">Help</a>
+                    <!-- batas modal -->
                 </div>
             </div>
         </div>
@@ -34,6 +35,7 @@
             <canvas class="bg-primary-content mx-auto rounded-lg" id="webgl_canvas" width="500" height="500"> </canvas>
         </div>
     </div>
+
     <script src="./script/init.js"></script>
     <script src="./script/gl.js"></script>
     <script src="./script/render.js"></script>
