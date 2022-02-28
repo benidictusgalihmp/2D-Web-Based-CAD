@@ -4,6 +4,11 @@
 
 Basic example of 2D Web Based CAD (Computer-Aided Design)
 
+## Anggota Kelompok:
+- 13519120 Epata Tuah
+- 13519138 Bintang Fajarianto
+- 13519159 Benidictus Galih Mahar Putra
+
 
 ### Setup Pertama Kali
 1. Git clone repo
