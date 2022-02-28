@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGL 2D CAD</title>
+  <link href="./css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="w-screen h-screen flex flex-wrap">
+        <div class="w-1/5 min-w- h-screen bg-info-content">
+            <div class="mx-4 justify-between">
+                <div class="mt-4">
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_move" value="Move" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_line" value="Line" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_square" value="Square" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_rectangle" value="Rectangle" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_polygon" value="Polygon" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_enlargeSq" value="Perbesar" disabled/>
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_shrinkSq" value="Perkecil" disabled/>
+                    <input class="btn p-0 w-full my-2 bg-transparent border-0" type="color" id="btn_color" value="#000000" />
+                    <input class="btn btn-info w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_change_color" value="Change Color" />
+                </div>
+                <div class="mt-10">
+                    <input class="p-0 w-full my-2 min-h-0 h-8 text-xs" type="file" id="btn_load" accept=".json" />
+                    <input class="btn btn-primary w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_save" value="Save" />
+                    <input class="btn btn-primary w-full my-2 min-h-0 h-8 text-xs" type="button" id="btn_help" value="Help" />
+                </div>
+            </div>
+        </div>
+        <div class="w-4/5 bg-gradient-to-br from-primary to-secondary">
+            <h1 class="my-4 text-4xl font-bold text-center text-primary-content">2D Web Based CAD</h1>
+            <h3 class="mb-8 text-center text-primary-content">13519120 || 13519138 || 13519159</h3>
+            <canvas class="bg-primary-content mx-auto rounded-lg" id="webgl_canvas" width="500" height="500"> </canvas>
+        </div>
+    </div>
+    <script src="./script/init.js"></script>
+    <script src="./script/gl.js"></script>
+    <script src="./script/render.js"></script>
+    <script src="./script/button.js"></script>
+    <script src="./script/object.js"></script>
+</body>
+</html>
